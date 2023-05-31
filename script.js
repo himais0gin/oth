@@ -13,7 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ゲームの初期配置を設定
-
+  cells[27].classList.add('piece', 'black');
+  cells[28].classList.add('piece', 'white');
+  cells[35].classList.add('piece', 'white');
+  cells[36].classList.add('piece', 'black');
+  
   // ピースを置く関数
   function placePiece(cell, color) {
     const piece = document.createElement('div');
